@@ -1,30 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 15:39:58 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/20 18:47:12 by bsalgado         ###   ########.fr       */
+/*   Created: 2023/04/20 11:21:28 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/04/20 15:33:51 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdio.h>
-# include <unistd.h>
-# include <string.h>
-# include <stdlib.h>
+int	ft_isascii(int c)
+{
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
+}
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-size_t	ft_strlen(const char *s);
-void	*ft_memset(void *dest, int c, size_t len);
-void	ft_bzero(void *s, size_t n);
+/*
+int	main(void)
+{
+	char	name;
 
-#endif
+	name = 'b';
+	
+	printf("\n\t>>> USING ft_isascii() <<<\n\n");
+	printf("Sending \'%c\' : %d\n", name, ft_isascii(name));
+
+	if (ft_isascii(name))
+		printf("The char \'%c\' is from ascii table.\n", name);
+	else
+		printf("The char \'%c\' is not from ascii table.\n", name);
+}
+*/

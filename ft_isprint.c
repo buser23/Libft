@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 18:03:40 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/20 12:31:51 by bsalgado         ###   ########.fr       */
+/*   Created: 2023/04/20 11:22:54 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/04/20 16:26:50 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_isprint(int c)
 {
-	if (c >= '0' && c <= '9')
+	if (c > 31 && c < 127)
 		return (1);
 	return (0);
 }
@@ -22,16 +22,16 @@ int	ft_isdigit(int c)
 /*
 int	main(void)
 {
-	char	name;
+	char name;
 
 	name = 'b';
-	
-	printf("\n\t>>> USING ft_isdigit() <<<\n\n");
-	printf("Sending \'%c\' : %d\n", name, ft_isdigit(name));
 
-	if (ft_isdigit(name))
-		printf("The char \'%c\' is numeric.\n", name);
+	printf("\n\t>>> USING ft_isprint() <<<\n\n");
+	printf("Sending \'%c\' : %d\n", name, ft_isprint(name));
+
+	if (ft_isprint(name))
+		printf("The char \'%c\' is a printable character.\n", name);
 	else
-		printf("The char \'%c\' is not numeric.\n", name);
+		printf("The char \'%c\' is not a printable character.\n", name);
 }
 */

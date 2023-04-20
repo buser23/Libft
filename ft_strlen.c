@@ -1,30 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 15:39:58 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/20 18:47:12 by bsalgado         ###   ########.fr       */
+/*   Created: 2023/04/20 11:29:05 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/04/20 16:56:45 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdio.h>
-# include <unistd.h>
-# include <string.h>
-# include <stdlib.h>
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-size_t	ft_strlen(const char *s);
-void	*ft_memset(void *dest, int c, size_t len);
-void	ft_bzero(void *s, size_t n);
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
 
-#endif
+/*
+int	main(void)
+{
+	char *str = "bruno";
+
+	printf("\n\t>>> USING ft_strlen() <<<\n\n");
+	
+	int i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	printf("The Length of \'%s\' = %ld\n", str, ft_strlen(str));
+	return (0);
+}
+*/

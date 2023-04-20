@@ -1,37 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 18:03:40 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/20 12:31:51 by bsalgado         ###   ########.fr       */
+/*   Created: 2023/04/20 18:31:59 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/04/20 18:55:47 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+/*
+	   The  bzero()  function  erases  the  data  in the n bytes of the memory
+       starting at the location pointed to by s, by writing zeros (bytes  con‐
+       taining '\0') to that area.
+*/
+
+void	ft_bzero(void *s, size_t n)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
+	ft_memset(s, '\0', n);
 }
 
 /*
 int	main(void)
 {
-	char	name;
+	char str[] = "bruno";
 
-	name = 'b';
-	
-	printf("\n\t>>> USING ft_isdigit() <<<\n\n");
-	printf("Sending \'%c\' : %d\n", name, ft_isdigit(name));
-
-	if (ft_isdigit(name))
-		printf("The char \'%c\' is numeric.\n", name);
-	else
-		printf("The char \'%c\' is not numeric.\n", name);
+	printf("\n\t>>> USING ft_bzero() <<<\n\n");
+	printf("String Before: %s\n", str);
+	ft_bzero(str, 5);
+    printf("String After: %s\n", str);
+	return (0);
 }
 */
