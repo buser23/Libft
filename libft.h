@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 15:39:58 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/28 17:59:19 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/04/28 18:44:56 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_strnstr(const char	*big, const char *little, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_atoi(const char *nptr);
+void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strdup(const char *str);
 
 #endif
