@@ -1,40 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 11:29:05 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/28 12:37:15 by bsalgado         ###   ########.fr       */
+/*   Created: 2023/04/28 17:20:58 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/04/28 17:46:12 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-size_t	ft_strlen(const char *s)
+int	ft_atoi(const char *nptr)
 {
-	size_t	i;
+	int	sign;
+	int	result;
 
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
+	sign = 1;
+	result = 0;
+	while ((*nptr >= 9 && *nptr <= 13) || *nptr == ' ')
+	{
+		nptr++;
+	}
+	if (*nptr == '-' || *nptr == '+')
+	{
+		if (*nptr == '-')
+		{
+			sign = -1;
+		}
+		nptr++;
+	}
+	while (*nptr >= '0' && *nptr <= '9')
+	{
+		result = (result * 10) + (*nptr - '0');
+		nptr++;
+	}
+	return (result * sign);
 }
 
 /*
 int	main(void)
 {
-	char *str = "Bruno";
-
-	printf("\n\t>>> USING ft_strlen() <<<\n\n");
+	char str[] = "-----1234ab567";
+	int num = ft_atoi(str);
+	printf("Result: %d\n", num);
 	
-	int i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	printf("The Length of \'%s\' = %ld\n", str, ft_strlen(str));
 	return (0);
 }
 */

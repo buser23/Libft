@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 11:57:44 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/28 12:13:11 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/04/28 12:43:48 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,10 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 
-
 /*
 int	main(void)
 {
-	char str[] = "bruno";
+	char str[] = "Bruno";
 
 	printf("\n\t>>> USING ft_memset() <<<\n\n");
 	printf("String Before: %s\n", str);

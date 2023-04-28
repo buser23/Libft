@@ -1,37 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 18:31:59 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/28 12:37:21 by bsalgado         ###   ########.fr       */
+/*   Created: 2023/04/28 16:06:02 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/04/28 16:14:09 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-	   The  bzero()  function  erases  the  data  in the n bytes of the memory
-       starting at the location pointed to by s, by writing zeros (bytes  con‐
-       taining '\0') to that area.
+
+The ft_tolower function is a standard library function in C 
+that converts a given uppercase character to its 
+corresponding lowercase character.
+
 */
 
-void	ft_bzero(void *s, size_t n)
+int	ft_tolower(int c)
 {
-	ft_memset(s, '\0', n);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	else
+		return (c);
 }
 
 /*
 int	main(void)
 {
-	char str[] = "Bruno";
+    char c = 'B';
+    char c_converted = ft_tolower(c);
 
-	printf("\n\t>>> USING ft_bzero() <<<\n\n");
-	printf("String Before: %s\n", str);
-	ft_bzero(str, 5);
-    printf("String After: %s\n", str);
-	return (0);
+    printf("Original character: %c\n", c);
+    printf("Lowercase character: %c\n", c_converted);
+
+    return 0;
 }
 */
