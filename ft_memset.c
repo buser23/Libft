@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 11:57:44 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/20 18:27:59 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/04/28 12:13:11 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,20 +20,16 @@
 	variable "memory" receives the pointer and allow changes on it to move on
 */
 
-void	*ft_memset(void *dest, int c, size_t len)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned int	counter;
-	unsigned char	*memory;
+	unsigned char	*p;
 
-	counter = 0;
-	memory = dest;
-	while (len > counter)
-	{
-		memory[counter] = c;
-		counter++;
-	}
-	return (memory);
+	p = s;
+	while (n-- > 0)
+		*p++ = (unsigned char) c;
+	return (s);
 }
+
 
 /*
 int	main(void)
