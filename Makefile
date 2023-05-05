@@ -8,13 +8,13 @@ LIBC_PART1 = 	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 				ft_memchr.c ft_strnstr.c ft_memcmp.c ft_atoi.c ft_calloc.c ft_strdup.c
 
 # Additional source files
-# ADDITIONAL_PART2 =
+ADDITIONAL_PART2 = ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c
 
 # Bonus source files
-# BONUS = ...
+# BONUS =
 
 # Assign the sources of Part1 with the sources of Part2
-SRC = ${LIBC_PART1} #${ADDITIONAL_PART2}
+SRC = ${LIBC_PART1} ${ADDITIONAL_PART2}
 
 # Use same files from sources, but change .c to .o
 OBJECTS = ${SRC:.c=.o}
