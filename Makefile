@@ -11,7 +11,7 @@ LIBC_PART1 = 	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 ADDITIONAL_PART2 = ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c
 
 # Bonus source files
-# BONUS =
+# BONUS = ........
 
 # Assign the sources of Part1 with the sources of Part2
 SRC = ${LIBC_PART1} ${ADDITIONAL_PART2}
