@@ -8,10 +8,11 @@ LIBC_PART1 = 	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 				ft_memchr.c ft_strnstr.c ft_memcmp.c ft_atoi.c ft_calloc.c ft_strdup.c
 
 # Additional source files
-ADDITIONAL_PART2 = ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c
+ADDITIONAL_PART2 = 	ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c \
+					ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
 
 # Bonus source files
-# BONUS = ........
+BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c
 
 # Assign the sources of Part1 with the sources of Part2
 SRC = ${LIBC_PART1} ${ADDITIONAL_PART2}
@@ -20,7 +21,7 @@ SRC = ${LIBC_PART1} ${ADDITIONAL_PART2}
 OBJECTS = ${SRC:.c=.o}
 
 # Use same files from bonus, but change .c to .o
-# BONUS_OBJECTS = ${BONUS:.c=.o}
+BONUS_OBJECTS = ${BONUS:.c=.o}
 
 # Specify the name of the header file needed by the program
 HEADER = libft.h
@@ -55,9 +56,9 @@ $(NAME): ${OBJECTS}
 		@echo "\n${NAME} created"
 
 # Compile bonus following above rules 
-#bonus: ${OBJECTS} ${BONUS_OBJECTS}
-#		@ar rcs ${NAME} ${OBJECTS} ${BONUS_OBJECTS}
-#		@echo "\n$@ created"
+bonus: ${OBJECTS} ${BONUS_OBJECTS}
+		@ar rcs ${NAME} ${OBJECTS} ${BONUS_OBJECTS}
+		@echo "\n$@ created"
 
 # "-c $< -o" compiles the C source file specified by "$<" 
 # into an object file with the same name, but with a .o extension
@@ -68,9 +69,8 @@ $(NAME): ${OBJECTS}
 	@echo "\n$@ created"
 
 # Clean .o files (Object files)
-# Add this: ${BONUS_OBJECTS}
 clean:
-	@$(RM) $(OBJECTS)  
+	@$(RM) $(OBJECTS) ${BONUS_OBJECTS}
 	@echo "\nObjects deleted"
 
 # Same as "clean" rule but with an additional step to remove the executable file, 
