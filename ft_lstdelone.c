@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
+/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 17:38:53 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/09 18:16:33 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/10 23:39:27 by brunofernan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,30 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 /*
 int	main(void)
 {
+	t_list *lst = malloc(sizeof(t_list));
+    if (lst == NULL)
+    {
+        printf("Error: unable to allocate memory\n");
+        return 1;
+    }
 
+    lst->content = malloc(sizeof(int)); 
+	// replace with the actual type of content in your t_list
+    if (lst->content == NULL)
+    {
+        printf("Error: unable to allocate memory\n");
+        free(lst);
+        return 1;
+    }
+
+    *(int *)(lst->content) = 42; 
+	// replace with the actual value you want to store in lst->content
+
+    void (*del)(void*) = free; 
+	// replace with the actual function to free lst->content
+
+    ft_lstdelone(lst, del);
+
+    return 0;
 }
 */

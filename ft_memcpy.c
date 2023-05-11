@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
+/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 12:22:35 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/28 12:47:35 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/10 20:56:10 by brunofernan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

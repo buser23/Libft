@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
+/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 12:52:01 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/28 15:20:06 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/10 23:38:27 by brunofernan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	char		*pdest;
 	const char	*psrc;
 
-	if (!dest && !src)
+	if (dest == NULL && src == NULL)
 		return (NULL);
 	pdest = dest;
 	psrc = src;
