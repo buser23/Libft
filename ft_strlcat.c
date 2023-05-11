@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
+/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 15:38:59 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/28 15:49:51 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/12 00:25:54 by brunofernan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,79 @@
 
 /*
 
-The ft_strlcat() function is used to concatenate a null-terminated 
-string from a source string to a destination string, while ensuring 
-that the destination string does not overflow.
+	The ft_strlcat() function is used to concatenate a null-terminated 
+	string from a source string to a destination string, while ensuring 
+	that the destination string does not overflow.
 
-The function takes three arguments:
+	The function takes three arguments:
 
-    dest: a pointer to the destination string where the 
+    - dest: a pointer to the destination string where the 
 		  concatenated string will be stored.
-    src: a const pointer to the source string to be concatenated.
-    size: a size_t value representing the maximum number of 
-	      bytes that can be stored in the destination string, 
+    - src: a const pointer to the source string to be concatenated.
+    - size: a size_t value representing the maximum number of 
+	    bytes that can be stored in the destination string, 
 		  including the null terminator.
 
-The function returns a size_t value representing the total 
-length of the concatenated string, i.e., the sum of the length 
-of the source string and the original length of the destination string.
+	The function returns a size_t value representing the total 
+	length of the concatenated string, i.e., the sum of the length 
+	of the source string and the original length of the destination string.
 
+
+	The function returns the total length of the string that would have 
+	been created if there were no size restrictions.
+
+	The implementation first calculates the lengths of the src 
+	and dest strings using the ft_strlen function. It then checks 
+	if size is greater than the length of the dest string. If it is, 
+	the function calculates the sum of the lengths of src and dest and 
+	continues appending src to dest until it reaches the end of src 
+	or the buffer size is reached.
+
+	If size is less than or equal to the length of dest, the function 
+	returns the sum of the length of src and size as there is not 
+	enough space to append the entire src string.
+
+	Finally, the function adds a null terminating character to the end 
+	of the resulting string and returns the total length of the string 
+	that would have been created without the size restrictions.
+
+	1 - The function header defines the function, which takes in 
+	three arguments: a pointer to the destination string, a 
+	pointer to the source string, and the size of the destination 
+	buffer. The function returns a size_t, which represents the 
+	length of the resulting string that would have been created 
+	without the size restrictions.
+
+	2 - Declare four variables that will be used throughout the function: 
+	i, a counter variable; dest_len and src_len, which will hold the lengths 
+	of the dest and src strings, respectively; and sum, which will hold 
+	the sum of dest_len and src_len.
+
+	3 - Initialize the counter i and the sum sum to zero.
+
+	4 - Use the ft_strlen function to calculate the lengths of 
+	the dest and src strings and assign them to the variables 
+	dest_len and src_len.
+
+	5 - The if statement checks if there is enough space in the 
+	destination buffer to append the entire src string. 
+	If there is, sum is set to the sum of dest_len and src_len. 
+	If there is not enough space, the function returns the sum of 
+	src_len and size, as this is the maximum number of characters 
+	that can be copied into dest.
+
+	6 - The while loop appends the src string to the end of the 
+	dest string. It copies characters from src to dest until it 
+	reaches the end of src, or until the destination buffer is full. 
+	Note that dest_len + 1 is used to ensure that there is enough 
+	space in the buffer for the null terminator.
+
+	7 - Adds a null terminating character to the end of the 
+	resulting string.
+
+	8 - Finally, the function returns the value of sum, which 
+	represents the total length of the string that would have 
+	been created if there were no size restrictions.
 
 */
 

@@ -6,7 +6,7 @@
 /*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 12:52:01 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/10 23:38:27 by brunofernan      ###   ########.fr       */
+/*   Updated: 2023/05/12 00:09:32 by brunofernan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,29 @@
 	
 	It takes three arguments:
 
-    	dest: A pointer to the destination buffer where the content is to be copied.
-    	src: A pointer to the source of data to be copied.
-    	n: The number of bytes to be copied.
+		- dest: A pointer to the destination memory block where the contents 
+		of the source memory block will be moved.
+		- src: A pointer to the source memory block containing the data to be 
+		moved to the destination memory block.
+		- n: The number of bytes to be moved from the source memory block to the 
+		destination memory block.
+
+	The function moves n bytes from the memory block pointed to by src to the 
+	memory block pointed to by dest. The function is similar to ft_memcpy, but 
+	it handles overlapping memory blocks correctly. This means that dest and src 
+	can point to overlapping memory blocks, and the function will still 
+	work correctly.
+
+	The function returns a pointer to the destination memory block (dest). 
+	This makes it convenient to chain calls to ft_memmove to move data to 
+	multiple destination memory blocks.
+
+	In summary, the ft_memmove function is a standard library function in 
+	C that is used to move a specified number of bytes from one memory 
+	block to another. The function takes a pointer to the source memory 
+	block, a pointer to the destination memory block, and the number 
+	of bytes to be moved as arguments, and returns a pointer to the 
+	destination memory block.
 
 */
 

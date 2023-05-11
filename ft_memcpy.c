@@ -6,7 +6,7 @@
 /*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 12:22:35 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/10 20:56:10 by brunofernan      ###   ########.fr       */
+/*   Updated: 2023/05/12 00:03:21 by brunofernan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,36 @@
 /*
 
 	The  memcpy() function copies n bytes from memory area src to memory area dst.
-	The memory areas must not overlap.  Use memmove(3) if the memory areas do over‐
-	lap.
+	The memory areas must not overlap.  
 
-	(unsigned char *) to avoid const declaration
-	unsigned char *memory_src; redeclare memory to get memory value
+	(unsigned char *): 				 to avoid const declaration
+	unsigned char *memory_src: redeclare memory to get memory value
+
+	It takes three arguments:
+
+		- dest: A pointer to the destination memory block where the contents 
+		of the source memory block will be copied.
+		- src: A pointer to the source memory block containing the data to be 
+		copied to the destination memory block.
+		- n: The number of bytes to be copied from the source memory block to 
+		the destination memory block.
+
+	The function copies n bytes from the memory block pointed to by src to the 
+	memory block pointed to by dest. The function assumes that the memory 
+	blocks do not overlap, meaning that dest and src should not point to 
+	overlapping memory blocks. If the memory blocks do overlap, the behavior 
+	of ft_memcpy is undefined.
+
+	The function returns a pointer to the destination memory block (dest). 
+	This makes it convenient to chain calls to ft_memcpy to copy data to 
+	multiple destination memory blocks.
+
+	In summary, the ft_memcpy function is a standard library function in C 
+	that is used to copy a specified number of bytes from one memory 
+	block to another. The function takes a pointer to the source 
+	memory block, a pointer to the destination memory block, 
+	and the number of bytes to be copied as arguments, 
+	and returns a pointer to the destination memory block.
 
 */
 
