@@ -6,7 +6,7 @@
 /*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 12:22:35 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/12 00:36:31 by brunofernan      ###   ########.fr       */
+/*   Updated: 2023/05/12 00:37:02 by brunofernan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,6 @@
 	memory block, a pointer to the destination memory block, 
 	and the number of bytes to be copied as arguments, 
 	and returns a pointer to the destination memory block.
-
-	updated
 
 */
 
