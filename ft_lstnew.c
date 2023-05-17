@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:41:30 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/09 16:52:48 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/17 18:43:53 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,36 @@
 
 	Finally, the data and new_node pointers are freed to 
 	prevent memory leaks.
+
+	The function ft_lstnew creates a new node for a linked list with the 
+	given content. Here's a breakdown of how the function works:
+
+    	1 - The function takes a parameter content, which represents 
+		the content to be stored in the new node.
+
+    	2 - It declares a pointer variable new_node of type t_list, 
+		which represents the new node in the linked list.
+
+    	3 - It allocates memory for the new node using malloc, 
+		with the size of sizeof(t_list). This allocates memory 
+		to store the node structure.
+
+    	4 - It checks if the memory allocation was successful. 
+		If the allocation fails, the function returns NULL 
+		to indicate an error.
+
+    	5 - If the memory allocation is successful, it assigns the 
+		content parameter to the content field of the new node.
+
+    	6 - It sets the next field of the new node to NULL, 
+		indicating that it is the last node in the linked list.
+
+    	7 Finally, it returns the pointer to the new node.
+
+	In summary, the ft_lstnew function creates a new node for a 
+	linked list, assigns the given content to the node, and returns 
+	a pointer to the new node. It handles the memory allocation for 
+	the node and initializes its fields appropriately.
 	
 */
 

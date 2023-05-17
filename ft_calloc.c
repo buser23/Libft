@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 18:10:27 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/28 18:26:51 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/17 17:48:38 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,28 @@
 	- Initialize all bytes of the allocated memory to 0
 	ft_bzero (p, nmemb * size);
 	
+	1 - It first calls the malloc function to allocate memory for 
+	the array of elements. It multiplies nmemb by size to determine 
+	the total size needed for the allocation.
+
+    2 - If the malloc function returns NULL, it means the allocation 
+	was unsuccessful. In that case, the function returns NULL to 
+	indicate the failure to allocate memory.
+
+    3 - If the memory allocation is successful, it proceeds to 
+	the next step.
+
+    4 - The function calls ft_bzero to set all the bytes in the 
+	allocated memory block to zero. This ensures that the allocated 
+	memory is properly initialized.
+
+    5 - Finally, the function returns the pointer p, which points 
+	to the allocated and zero-initialized memory block.
+
+	The calloc function is similar to malloc, but it also initializes 
+	the allocated memory to zero. By using malloc followed by 
+	ft_bzero, the ft_calloc function achieves the same effect as 
+	the standard calloc function.
 
 */
 

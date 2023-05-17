@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 17:30:02 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/09 17:37:55 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/17 18:52:50 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,44 @@
 	the linked list. The new element has content "Goodbye". 
 	Finally, we print the contents of the linked list to the
 	console, and free the memory used by the linked list.
+
+	 This function adds a new node to the end of a linked list. 
+
+	     1 - The function ft_lstadd_back takes two parameters: 
+		 **lst, a double pointer to the head of the list, 
+		 and *new, a pointer to the new node being added.
+
+    	2 - The function checks if either lst or new is NULL. 
+		If either of them is NULL, it means an invalid argument 
+		was provided, so the function returns without making 
+		any changes to the list.
+
+    	3 - If both lst and new are not NULL, the function 
+		checks if the list is empty by verifying if the head 
+		pointer (*lst) is NULL. If the list is empty, it means 
+		the new node should become the head of the list, so 
+		the function assigns the new node to *lst.
+
+    	4 - If the list is not empty, the function enters 
+		the else block. It initializes a pointer curr to 
+		the head of the list.
+
+    	5 - Inside the while loop, the function traverses 
+		the list by moving the curr pointer to the next 
+		node (curr->next) until reaching the last node. 
+		This is determined by checking if the next pointer 
+		of the current node is NULL.
+
+    	6 - Once the last node is reached, the function 
+		assigns the next pointer of the last node to the 
+		new node (curr->next = new), effectively adding 
+		the new node at the end of the list.
+
+    	7 - Finally, the function terminates.
+
+	By using this ft_lstadd_back function, you can add a 
+	new node to the end of a linked list by providing 
+	the head of the list and the new node as arguments.
 
 */
 

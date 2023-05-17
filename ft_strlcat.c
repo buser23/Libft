@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 15:38:59 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/12 00:25:54 by brunofernan      ###   ########.fr       */
+/*   Updated: 2023/05/17 18:42:02 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

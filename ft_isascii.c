@@ -6,11 +6,31 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 11:21:28 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/20 15:33:51 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/17 13:30:15 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+
+    1 - The function ft_isascii takes an integer c as an argument, 
+	representing the character to be checked.
+
+    2 - It checks if the value of c is greater than or equal to 0 and less 
+	than or equal to 127. This range represents the valid ASCII characters.
+
+    3 - If c falls within the valid ASCII range, the code returns 1, 
+	indicating that the character is a valid ASCII character.
+
+    4 - If c is outside the valid ASCII range, the code returns 0, 
+	indicating that the character is not a valid ASCII character.
+
+	5 - This implementation of isascii checks if a character is within 
+	the valid ASCII range by comparing its value to the range of 0 to 127. 
+	It returns 1 if the character is a valid ASCII character and 0 otherwise.
+
+*/
 
 int	ft_isascii(int c)
 {

@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 15:46:39 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/09 15:56:50 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/17 18:36:11 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,37 @@
 	Note that this function assumes that the file descriptor is valid and 
 	writable. It's the responsibility of the caller to ensure 
 	that this is the case.
+
+	The function ft_putstr_fd writes a string s to a file descriptor fd. 
+	Here's a breakdown of how the function works:
+
+    	1 - The function takes two parameters: s, which is a pointer to 
+		the string to be written, and fd, which is the file descriptor 
+		specifying where to write the string.
+
+    	2 - It checks if the pointer s is null. If s is null, indicating 
+		an empty or uninitialized string, the function returns without 
+		performing any operations.
+
+    	3 - The function enters a loop that continues until it reaches 
+		the null character '\0', which marks the end of the string.
+
+    	4 - Inside the loop, it calls the write function, passing 
+		the file descriptor fd, the pointer s, and the size of a 
+		single character (1 byte) to write the current character 
+		to the specified file descriptor.
+
+    	5 - After writing the character, it increments the pointer 
+		s to move to the next character in the string.
+
+    	6 - The loop repeats until the null character '\0' is 
+		encountered, indicating the end of the string.
+
+	In summary, the ft_putstr_fd function writes a string to a specified 
+	file descriptor by iterating through each character of the 
+	string and using the write function to write each character to 
+	the file descriptor. It handles the case of a null pointer by 
+	checking if s is null before starting the loop.
 	
 */
 

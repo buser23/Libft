@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 18:29:01 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/04/28 18:44:30 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/17 17:51:36 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,45 @@
 
 /*
 
-The ft_strdup() function is a string manipulation function in C that 
-duplicates a string. It takes a const char *s parameter, which is a pointer 
-to the original string that we want to duplicate, and returns a pointer 
-to a new string that is a copy of the original.
+	The ft_strdup() function is a string manipulation function in C that 
+	duplicates a string. It takes a const char *s parameter, which is a pointer 
+	to the original string that we want to duplicate, and returns a pointer 
+	to a new string that is a copy of the original.
+	
+	1 - It first calculates the length of the input string str using the 
+	ft_strlen function. This length will be used to determine the size 
+	of the memory block needed to store the duplicate string.
+
+    2 - It then calls the malloc function to allocate memory for the 
+	new string. It multiplies the length len by the size of a character 
+	sizeof(char) and adds 1 to account for the null terminator.
+
+    3 - If the malloc function returns NULL, indicating a failed 
+	allocation, the function returns NULL to indicate the failure 
+	to allocate memory.
+
+    4 - If the memory allocation is successful, it proceeds to 
+	the next step.
+
+    5 - It initializes a variable i to 0 and enters a loop that 
+	iterates len times.
+
+    6 - Inside the loop, it copies each character from the 
+	original string str to the newly allocated memory block p 
+	character by character.
+
+    7 - After copying all characters, it assigns the null terminator 
+	'\0' to the last character of the duplicated string to ensure 
+	proper string termination.
+
+    8 - Finally, it returns the pointer p, which points to 
+	the duplicated string.
+
+	The ft_strdup function creates a duplicate of the given string 
+	by allocating memory for the new string and copying the 
+	contents of the original string into it. It handles the 
+	allocation and copying process, and returns the pointer 
+	to the duplicated string.
 
 */
 

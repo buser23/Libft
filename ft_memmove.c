@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 12:52:01 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/12 00:09:32 by brunofernan      ###   ########.fr       */
+/*   Updated: 2023/05/17 13:16:39 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,37 @@
 	block, a pointer to the destination memory block, and the number 
 	of bytes to be moved as arguments, and returns a pointer to the 
 	destination memory block.
+
+	1 - The function ft_memmove takes three arguments: a pointer dest to 
+	the destination memory block, a pointer src to the source memory block, 
+	and a size_t n indicating the number of bytes to be copied.
+
+    2 - It declares two local variables pdest and psrc as char pointers 
+	and initializes them with the values of dest and src respectively. 
+	These pointers will be used to iterate over the source and 
+	destination memory blocks.
+
+    3 - It checks if both dest and src are NULL. If they are both NULL, 
+	it returns NULL. This check is performed to handle cases where 
+	the caller passes NULL pointers.
+
+    4 - The code checks if the destination memory block (pdest) 
+	is located before the source memory block (psrc). 
+	This check is done to determine the direction of the copy.
+
+    5 - If pdest is before psrc, it means the memory regions 
+	do not overlap. In this case, the code enters a while loop 
+	that copies each byte from the source memory block to the 
+	destination memory block using the *pdest++ = *psrc++ assignment.
+
+    6 - If pdest is not before psrc, it means the memory 
+	regions overlap. In this case, the code adjusts the pointers 
+	to point to the end of the memory blocks. Then it enters a 
+	while loop that copies each byte from the end of the 
+	source memory block to the end of the destination memory 
+	block using the *(--pdest) = *(--psrc) assignment.
+
+    7 - After the loop completes, the dest pointer is returned.
 
 */
 

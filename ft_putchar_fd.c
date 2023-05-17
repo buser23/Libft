@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 15:23:48 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/09 15:31:26 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/17 18:33:53 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,28 @@
 	Note that this function assumes that the file descriptor is valid and 
 	writable. It's the responsibility of the caller to ensure 
 	that this is the case.
+
+	The function ft_putchar_fd writes a single character c to a file 
+	descriptor fd. Here's a breakdown of how the function works:
+
+    	1 - The function takes two parameters: c, which represents the 
+		character to be written, and fd, which is the file descriptor 
+		specifying where to write the character.
+
+    	2 - It calls the write function, which is a low-level system 
+		call used for writing data to a file descriptor.
+
+    	3 - The write function takes three arguments: the file descriptor fd, 
+		a pointer to the data to be written (in this case, the address of c), 
+		and the number of bytes to write (in this case, 1 byte 
+		for a single character).
+
+    	4 - By passing the address of c (&c) to the write function, 
+		the function writes the character c to the specified 
+		file descriptor.
+
+	In summary, the ft_putchar_fd function writes a single character 
+	to a specified file descriptor using the write function.
 	
 */
 

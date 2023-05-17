@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 01:10:08 by brunofernan       #+#    #+#             */
-/*   Updated: 2023/05/11 02:08:07 by brunofernan      ###   ########.fr       */
+/*   Updated: 2023/05/17 19:05:25 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,66 @@
 
 	Finally, if all the nodes have been successfully created and added to 
 	new_lst, the function returns a pointer to the new linked list new_lst.
+
+	This function creates a new linked list by applying a 
+	function to each node of an existing linked list. 
+
+	    1 - The function ft_lstmap takes three parameters: lst, 
+		a pointer to the head of the original list, f, a function 
+		pointer to the function to be applied to each node, and del, 
+		a function pointer to the delete function.
+
+    	2 - The function checks if either lst or f is NULL. If either 
+		of them is NULL, it means invalid arguments were provided, 
+		so the function returns NULL without performing any mapping.
+
+    	3 - If both lst and f are not NULL, the function initializes 
+		two pointers: new_lst to keep track of the new list being 
+		created, and new_node to temporarily store the newly created nodes.
+
+    	4 - The function enters the while loop, which iterates 
+		through the original list until reaching the end (NULL).
+
+    	5 - Inside the loop, the function creates a new node by 
+		applying the function f to the content of the current 
+		node (f(lst->content)). The returned value is used as 
+		the content of the new node.
+
+    	6 - The function checks if the memory allocation 
+		for the new node failed (!new_node). If it did fail, 
+		indicating insufficient memory, the function clears 
+		the new list using ft_lstclear to free any memory 
+		that has been allocated so far. Then it returns 
+		NULL to indicate the failure.
+
+    	7 - If the memory allocation is successful, the 
+		function adds the new node to the new list using 
+		ft_lstadd_back.
+
+    	8 - The pointer lst is updated to point to the next 
+		node in the original list (lst = lst->next), 
+		effectively moving the traversal forward.
+
+    	9 - The loop continues until lst becomes NULL, 
+		which means the end of the original list has been reached.
+
+    	10 - Finally, the function returns the new list 
+		(new_lst) that has been created.
+
+	By using this ft_lstmap function, you can create a new linked 
+	list by applying a given function to each node of an existing list. 
+	The new list will contain nodes with content obtained by 
+	applying the function to the content of the original list's nodes.
+
+	The add_one function is an example function 
+	that adds one to an integer. This function can be used as the 
+	function to be applied to each node in the ft_lstmap function 
+	to create a new linked list where each node contains an 
+	integer incremented by one.
+
+	The print_list function you provided is an example function 
+	that prints the content of each node in a linked list. It assumes 
+	that the content of each node is an integer.
 
 */
 

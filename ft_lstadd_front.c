@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:54:41 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/09 17:06:31 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/17 18:47:09 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,33 @@
 
 	We then print the contents of the first node in the linked list 
 	using printf, and the output should be "First node content: Hello".
+
+	This function adds a new node to the front of a linked list.
+
+	    1 - The function ft_lstadd_front takes two parameters: **lst, a 
+		double pointer to the head of the list, and *new, a pointer to 
+		the new node being added.
+
+    	2 - The function checks if both lst and new are not NULL. 
+		This check ensures that valid pointers are provided for the 
+		list and the new node.
+
+    	3 - If the check passes, the next pointer of the new 
+		node is assigned the value of the current head of the 
+		list (*lst). This step links the new node to the rest 
+		of the list.
+
+    	4 - Finally, the head of the list (*lst) is updated to 
+		point to the new node. This step makes the new node 
+		the new head of the list, effectively adding it to the front.
+
+	Note that this implementation assumes the existence of a t_list 
+	structure that represents a node in the linked list. The t_list 
+	structure typically contains a data field and a pointer to the 
+	next node in the list.
+	
+	By using this ft_lstadd_front function, you can add a new node 
+	to the beginning of a linked list.
 	
 */
 

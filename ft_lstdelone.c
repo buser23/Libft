@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 17:38:53 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/10 23:39:27 by brunofernan      ###   ########.fr       */
+/*   Updated: 2023/05/17 18:54:36 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,36 @@
 	free function as arguments. This deletes the last node and 
 	frees the memory associated with it. The list pointer is set to NULL to 
 	indicate that the list is now empty.
+
+	This function deletes a single node from a linked list.
+
+	    1 - The function ft_lstdelone takes two parameters: 
+		lst, a pointer to the node to be deleted, and del, 
+		a function pointer to the delete function.
+
+    	2 - The function checks if both lst and del are not NULL. 
+		If either of them is NULL, it means invalid arguments 
+		were provided, so the function returns without 
+		performing any deletion.
+
+    	3 - If both lst and del are not NULL, the function 
+		calls the delete function del and passes the content 
+		of the node (lst->content) as an argument. This 
+		allows the delete function to free any dynamically 
+		allocated memory associated with the content.
+
+    	4 - After freeing the content, the function calls 
+		free to release the memory allocated for the node itself.
+
+    	5 - The variable lst is set to NULL (optional step). 
+		Note that modifying the local variable lst does not 
+		affect the original pointer outside the function.
+
+    	6 - Finally, the function terminates.
+
+	By using this ft_lstdelone function, you can delete a single 
+	node from a linked list by providing the node to be deleted 
+	and the appropriate delete function as arguments.
 
 */
 

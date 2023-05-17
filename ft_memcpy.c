@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 12:22:35 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/12 00:37:02 by brunofernan      ###   ########.fr       */
+/*   Updated: 2023/05/17 13:19:01 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,28 @@
 	memory block, a pointer to the destination memory block, 
 	and the number of bytes to be copied as arguments, 
 	and returns a pointer to the destination memory block.
+
+	1 - The function ft_memcpy takes three arguments: a pointer dest 
+	to the destination memory block, a pointer src to the source 
+	memory block, and a size_t n indicating the number of bytes to be copied.
+
+    2 - It declares two local variables memory_src and memory_dest as 
+	unsigned char pointers and initializes them with the values of src 
+	and dest respectively. These pointers will be used to iterate over 
+	the source and destination memory blocks.
+
+    3 - It checks if both src and dest are NULL. If they are both NULL, 
+	it returns the dest pointer. This check is performed to handle 
+	cases where the caller passes NULL pointers.
+
+    4 - The code enters a while loop that continues until n bytes 
+	have been copied. The loop iterates i from 0 to n-1.
+
+    5 - Inside the loop, each byte from the source memory block, 
+	memory_src[i], is assigned to the corresponding byte in the 
+	destination memory block, memory_dest[i].
+
+    6 - After the loop completes, the dest pointer is returned.
 
 */
 

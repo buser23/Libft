@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 15:57:50 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/09 16:16:17 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/17 18:37:52 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,33 @@
 	and the file descriptor fd as arguments, which writes the string to the file 
 	followed by a newline character.Finally, the file is closed using 
 	the close() system call, and the program exits.
+
+	The function ft_putendl_fd writes a string s followed by a 
+	newline character to a file descriptor fd. Here's a breakdown 
+	of how the function works:
+
+    	1 - The function takes two parameters: s, which is a pointer 
+		to the string to be written, and fd, which is the file 
+		descriptor specifying where to write the string.
+
+    	2 - It calculates the length of the string s using the 
+		ft_strlen function and assigns the result to the variable len.
+
+    	3 - It calls the write function to write the entire 
+		string s to the specified file descriptor fd. The write 
+		function takes the file descriptor fd, the pointer s, 
+		and the length len as arguments.
+
+    	4 - After writing the string, it calls the write 
+		function again to write a newline character '\n' 
+		to the file descriptor fd. This adds a newline at 
+		the end of the written string.
+
+	In summary, the ft_putendl_fd function writes a string to a 
+	specified file descriptor, followed by a newline character. 
+	It uses the write function to write the string and the 
+	newline character separately. The length of the string is 
+	calculated using ft_strlen.
 	
 */
 
