@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
+/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 18:31:59 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/17 13:22:50 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/20 18:22:50 by brunofernan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,8 @@
 /*
 
 	The  bzero()  function  erases  the  data  in the n bytes of the memory
-    starting at the location pointed to by s, by writing zeros (bytes
+  starting at the location pointed to by s, by writing zeros (bytes
 	containing '\0') to that area.
-
-	This function takes two arguments:
-
-		- s: A pointer to the memory block to be zeroed out.
-		- n: The number of bytes to be set to zero starting from the 
-		memory block pointed to by s.
 
 	The function sets the first n bytes of the memory block pointed to 
 	by s to the value 0 (i.e., the null byte).
@@ -41,12 +35,12 @@
 	the memory block and a size_t n indicating the number of 
 	bytes to set to zero.
 
-    2 - It calls the ft_memset function, passing s as the 
+  2 - It calls the ft_memset function, passing s as the 
 	pointer to the memory block, '\0' as the value to set 
 	(which represents zero in ASCII), and n as the size 
 	indicating the number of bytes to set.
 
-    3 - The ft_memset function then sets n bytes starting 
+  3 - The ft_memset function then sets n bytes starting 
 	from the address pointed to by s to the value '\0', 
 	effectively setting the memory block to zero.
 

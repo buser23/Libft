@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
+/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 12:52:01 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/17 13:16:39 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/20 18:49:30 by brunofernan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,25 +17,6 @@
 	The ft_memmove function in C is similar to ft_memcpy, 
 	but it guarantees correct behavior even if the source 
 	and destination memory areas overlap. 
-	
-	It takes three arguments:
-
-		- dest: A pointer to the destination memory block where the contents 
-		of the source memory block will be moved.
-		- src: A pointer to the source memory block containing the data to be 
-		moved to the destination memory block.
-		- n: The number of bytes to be moved from the source memory block to the 
-		destination memory block.
-
-	The function moves n bytes from the memory block pointed to by src to the 
-	memory block pointed to by dest. The function is similar to ft_memcpy, but 
-	it handles overlapping memory blocks correctly. This means that dest and src 
-	can point to overlapping memory blocks, and the function will still 
-	work correctly.
-
-	The function returns a pointer to the destination memory block (dest). 
-	This makes it convenient to chain calls to ft_memmove to move data to 
-	multiple destination memory blocks.
 
 	In summary, the ft_memmove function is a standard library function in 
 	C that is used to move a specified number of bytes from one memory 
@@ -48,32 +29,32 @@
 	the destination memory block, a pointer src to the source memory block, 
 	and a size_t n indicating the number of bytes to be copied.
 
-    2 - It declares two local variables pdest and psrc as char pointers 
+  2 - It declares two local variables pdest and psrc as char pointers 
 	and initializes them with the values of dest and src respectively. 
 	These pointers will be used to iterate over the source and 
 	destination memory blocks.
 
-    3 - It checks if both dest and src are NULL. If they are both NULL, 
+  3 - It checks if both dest and src are NULL. If they are both NULL, 
 	it returns NULL. This check is performed to handle cases where 
 	the caller passes NULL pointers.
 
-    4 - The code checks if the destination memory block (pdest) 
+  4 - The code checks if the destination memory block (pdest) 
 	is located before the source memory block (psrc). 
 	This check is done to determine the direction of the copy.
 
-    5 - If pdest is before psrc, it means the memory regions 
+  5 - If pdest is before psrc, it means the memory regions 
 	do not overlap. In this case, the code enters a while loop 
 	that copies each byte from the source memory block to the 
 	destination memory block using the *pdest++ = *psrc++ assignment.
 
-    6 - If pdest is not before psrc, it means the memory 
+  6 - If pdest is not before psrc, it means the memory 
 	regions overlap. In this case, the code adjusts the pointers 
 	to point to the end of the memory blocks. Then it enters a 
 	while loop that copies each byte from the end of the 
 	source memory block to the end of the destination memory 
 	block using the *(--pdest) = *(--psrc) assignment.
 
-    7 - After the loop completes, the dest pointer is returned.
+  7 - After the loop completes, the dest pointer is returned.
 
 */
 
