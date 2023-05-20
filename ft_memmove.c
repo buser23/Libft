@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/28 12:52:01 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 18:49:30 by brunofernan      ###   ########.fr       */
+/*   Created: 2023/05/20 19:00:35 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/05/20 19:00:36 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

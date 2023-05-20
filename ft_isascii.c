@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 11:21:28 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 18:15:15 by brunofernan      ###   ########.fr       */
+/*   Created: 2023/05/20 18:59:43 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/05/20 18:59:45 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

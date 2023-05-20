@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 11:22:54 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 18:15:46 by brunofernan      ###   ########.fr       */
+/*   Created: 2023/05/20 18:59:32 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/05/20 18:59:34 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

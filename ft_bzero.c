@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 18:31:59 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 18:22:50 by brunofernan      ###   ########.fr       */
+/*   Created: 2023/05/20 19:00:09 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/05/20 19:00:12 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

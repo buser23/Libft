@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 18:03:40 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 18:13:17 by brunofernan      ###   ########.fr       */
+/*   Created: 2023/05/20 18:58:45 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/05/20 18:59:24 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

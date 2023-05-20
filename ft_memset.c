@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 11:57:44 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 18:20:26 by brunofernan      ###   ########.fr       */
+/*   Created: 2023/05/20 19:00:27 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/05/20 19:00:29 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

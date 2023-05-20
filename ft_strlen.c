@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 11:29:05 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 18:16:35 by brunofernan      ###   ########.fr       */
+/*   Created: 2023/05/20 19:01:24 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/05/20 19:01:27 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

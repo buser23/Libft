@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 12:29:21 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 18:12:27 by brunofernan      ###   ########.fr       */
+/*   Created: 2023/05/20 18:59:53 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/05/20 18:59:55 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

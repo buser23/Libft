@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunofernandes <brunofernandes@student.    +#+  +:+       +#+        */
+/*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 11:19:47 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 18:14:01 by brunofernan      ###   ########.fr       */
+/*   Created: 2023/05/20 19:00:01 by bsalgado          #+#    #+#             */
+/*   Updated: 2023/05/20 19:00:03 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
