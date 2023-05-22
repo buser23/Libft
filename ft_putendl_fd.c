@@ -6,16 +6,13 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 15:57:50 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/22 14:55:49 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 15:22:48 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-
-	The ft_putendl_fd function is used to write a string to a 
-	specified file descriptor (i.e., a file or a device).
 
 	This function takes two arguments:
 

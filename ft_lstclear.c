@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 23:46:08 by brunofernan       #+#    #+#             */
-/*   Updated: 2023/05/22 15:05:35 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 15:26:44 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 
-	This function clears a linked list by deleting aall nodes 
+	This function clears a linked list by deleting all nodes 
 	and freeing the associated memory. 
 
 	1 - The function ft_lstclear takes two parameters: 
