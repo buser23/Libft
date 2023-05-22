@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 15:56:40 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/17 18:02:35 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:41:13 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,6 @@
 	Function that takes two string arguments s1 and set, and returns a new 
 	string that is a copy of s1 with any leading or trailing characters from 
 	set removed.
-
-	The code you provided defines a function ft_strtrim that trims a string 
-	s1 by removing leading and trailing characters that appear in the set string. 
-	Here is a breakdown of how the function works:
 
     1 - The function starts by declaring variables start and end to keep 
 	track of the starting and ending indices of the trimmed string, 

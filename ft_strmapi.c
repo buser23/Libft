@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 14:53:48 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/17 18:29:31 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:47:57 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,34 +18,6 @@
 	takes an unsigned integer and a character as arguments and returns a character. 
 	The function returns a new string that is the result of applying the 
 	function f to each character in the input string s.
-
-	The function takes in a string s and a function pointer f that takes an 
-	unsigned integer and a character as arguments and returns a character. 
-	It returns a new string that is the result of applying the function f 
-	to each character in the input string s.
-	
-	The code first initializes variables len, i, and result. len is assigned 
-	the length of the input string s using the ft_strlen function. i is 
-	initialized to 0, and result is allocated enough memory to hold a new 
-	string with length len + 1.
-
-	The code then checks if the memory allocation for result was successful. 
-	If it was not, the function returns NULL.
-
-	A while loop is then used to iterate over each character in the input 
-	string s. The function f is applied to each character, and the result 
-	is stored in the corresponding position in the new result string. 
-	The loop continues until i is equal to len.
-
-	Finally, a null terminator is added to the end of result, and the 
-	function returns result.
-
-
-	The function ft_strmapi takes a string s and a function pointer f 
-	as input. It applies the function f to each character of the string, 
-	providing the index and character as arguments, and returns a 
-	dynamically allocated string containing the results. Here's a 
-	breakdown of how the function works:
 
     1 - Declare size_t variables len and i. len will be used to store 
 	the length of the input string s, and i will be used as a 

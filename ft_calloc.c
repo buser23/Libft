@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 18:10:27 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/17 17:48:38 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:49:42 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 	for an array of nmemb elements, each of size bytes, and initializes 
 	all the bytes in the allocated memory to zero.
 
-	where nmemb is the number of elements to allocate and size is the 
-	size in bytes of each element.
 	The function returns a pointer to the allocated memory, 
 	or NULL if the allocation fails.
 

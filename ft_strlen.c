@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 19:01:24 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 19:01:27 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:29:24 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,16 @@
 	1 - The function ft_strlen takes a pointer s to the input string 
 	as an argument.
 
-  2 - It declares a local variable i of type size_t to keep track 
+  	2 - It declares a local variable i of type size_t to keep track 
 	of the length of the string.
 
-  3 - The code enters a while loop that continues until it encounters 
+  	3 - The code enters a while loop that continues until it encounters 
 	the null terminator ('\0') character, indicating the end of the string.
 
-  4 - Inside the loop, it increments the value of i by 1, effectively 
+  	4 - Inside the loop, it increments the value of i by 1, effectively 
 	counting the number of characters in the string.
 
-  5 - After the loop completes, the function returns the value of i, 
+  	5 - After the loop completes, the function returns the value of i, 
 	which represents the length of the string.
 
 */

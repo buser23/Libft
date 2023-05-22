@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 19:00:44 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 19:00:45 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:30:10 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,23 +28,23 @@
 	to the destination memory block, a pointer src to the source 
 	memory block, and a size_t n indicating the number of bytes to be copied.
 
-  2 - It declares two local variables memory_src and memory_dest as 
+  	2 - It declares two local variables memory_src and memory_dest as 
 	unsigned char pointers and initializes them with the values of src 
 	and dest respectively. These pointers will be used to iterate over 
 	the source and destination memory blocks.
 
-  3 - It checks if both src and dest are NULL. If they are both NULL, 
+  	3 - It checks if both src and dest are NULL. If they are both NULL, 
 	it returns the dest pointer. This check is performed to handle 
 	cases where the caller passes NULL pointers.
 
-  4 - The code enters a while loop that continues until n bytes 
+  	4 - The code enters a while loop that continues until n bytes 
 	have been copied. The loop iterates i from 0 to n-1.
 
-  5 - Inside the loop, each byte from the source memory block, 
+  	5 - Inside the loop, each byte from the source memory block, 
 	memory_src[i], is assigned to the corresponding byte in the 
 	destination memory block, memory_dest[i].
 
-  6 - After the loop completes, the dest pointer is returned.
+  	6 - After the loop completes, the dest pointer is returned.
 
 */
 

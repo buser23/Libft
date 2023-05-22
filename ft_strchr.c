@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 16:14:37 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/17 13:02:54 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:34:12 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,6 @@
 
 	The function ft_strchr is typically used to find the first 
 	occurrence of a character c in a null-terminated string s. 
-	It takes two arguments:
-
-    	s: A pointer to the string in which to search for the character.
-    	c: An integer that represents the character to search for.
-
-	The function returns a pointer to the first occurrence of the 
-	character c in the string s, or NULL if the character is not found.
 
 	1 - The function ft_strchr takes two arguments: a pointer s to the input 
 	string and an integer c representing the character to search for.

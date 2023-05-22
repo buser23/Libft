@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 18:59:32 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 18:59:34 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:29:08 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 /*
 
-  1 - The function ft_isprint takes an integer c as an argument, 
+  	1 - The function ft_isprint takes an integer c as an argument, 
 	representing the character to be checked.
 
-  2 - It checks if the value of c is greater than 31 and less than 127. 
+  	2 - It checks if the value of c is greater than 31 and less than 127. 
 	This range represents the printable ASCII characters.
 
-  3 - If c falls within the printable ASCII range, the code returns 1, 
+  	3 - If c falls within the printable ASCII range, the code returns 1, 
 	indicating that the character is a printable character.
 
-  4 - If c is outside the printable ASCII range, the code returns 0, 
+  	4 - If c is outside the printable ASCII range, the code returns 0, 
 	indicating that the character is not a printable character.
 
 */

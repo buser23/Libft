@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:16:49 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/17 18:39:49 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:56:32 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,55 +17,32 @@
 	The ft_putnbr_fd() function takes an integer n and a file descriptor fd as 
 	input and writes the integer to the specified file descriptor. 
 
-	This is the implementation of a recursive function ft_putnbr_fd that 
-	takes an integer n and an integer file descriptor fd as arguments and 
-	prints the integer n to the specified file descriptor.
+    1 - The function takes two parameters: n, which is the integer 
+	to be written, and fd, which is the file descriptor specifying 
+	where to write the integer.
 
-	The function first creates a long integer nb initialized with the value of n. 
-	If the input integer n is negative, the function prints a "-" sign to indicate 
-	that the number is negative and sets nb to its absolute value.
+    2 - It declares a long integer variable nb and assigns the 
+	value of n to it. This is done to handle the case where 
+	n is a negative number, as the function uses recursion.
 
-	The function then recursively prints the digits of the number by dividing nb 
-	by 10 and printing the remainder (i.e. the last digit) using the ft_putchar_fd 
-	function. The recursion stops when nb is less than or equal to 9.
+    3 - It checks if n is negative. If n is negative, 
+	it calls the ft_putchar_fd function with the '-' 
+	character and the file descriptor fd to write the negative 
+	sign to the specified file descriptor. It also assigns 
+	the absolute value of n to nb.
 
-	The printing of the digits is done in reverse order, since the function 
-	recursively calls itself with the quotient nb / 10 before 
-	printing the remainder.
+    4 - It checks if nb is greater than 9. If nb is greater 
+	than 9, it recursively calls the ft_putnbr_fd function 
+	with nb / 10 and the file descriptor fd. This 
+	effectively writes the remaining digits of the number in 
+	reverse order, as the function is called before writing 
+	the last digit.
 
-	Finally, the function prints the last digit of nb by adding the ASCII code 
-	for '0' to the remainder and passing it to ft_putchar_fd. This converts 
-	the integer digit to its corresponding character representation.
-
-	The function ft_putnbr_fd writes an integer n to a file descriptor 
-	fd. Here's a breakdown of how the function works:
-
-    	1 - The function takes two parameters: n, which is the integer 
-		to be written, and fd, which is the file descriptor specifying 
-		where to write the integer.
-
-    	2 - It declares a long integer variable nb and assigns the 
-		value of n to it. This is done to handle the case where 
-		n is a negative number, as the function uses recursion.
-
-    	3 - It checks if n is negative. If n is negative, 
-		it calls the ft_putchar_fd function with the '-' 
-		character and the file descriptor fd to write the negative 
-		sign to the specified file descriptor. It also assigns 
-		the absolute value of n to nb.
-
-    	4 - It checks if nb is greater than 9. If nb is greater 
-		than 9, it recursively calls the ft_putnbr_fd function 
-		with nb / 10 and the file descriptor fd. This 
-		effectively writes the remaining digits of the number in 
-		reverse order, as the function is called before writing 
-		the last digit.
-
-    	5 - After the recursive call (or if nb is not greater than 9), 
-		it calls the ft_putchar_fd function with (nb % 10 + '0') and 
-		the file descriptor fd to write the last digit of the number 
-		as a character. This converts the last digit to its 
-		corresponding character representation using the ASCII code.
+    5 - After the recursive call (or if nb is not greater than 9), 
+	it calls the ft_putchar_fd function with (nb % 10 + '0') and 
+	the file descriptor fd to write the last digit of the number 
+	as a character. This converts the last digit to its 
+	corresponding character representation using the ASCII code.
 
 	In summary, the ft_putnbr_fd function writes an integer to a specified 
 	file descriptor by recursively writing the digits of the number in 

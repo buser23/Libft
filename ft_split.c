@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 16:14:16 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/17 18:15:23 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:43:08 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,47 +14,9 @@
 
 /*
 	ft_split():
-		This function takes a string "s" and a character "c" as input, 
-		and returns an array of strings (i.e., an array of pointers to 
-		characters), where each string is a substring of "s" that is 
-		delimited by the character "c". Iterating through the input string "s" 
-		and calling the ft_word_splitter function on each non-delimiter substring. 
-		The function starts by allocating memory for an array of strings words 
-		using malloc, with the size of the array set to the number of words in 
-		the input string "s" (which is calculated using the ft_count_words function). 
-		The function then iterates through the input string "s", checking each 
-		character to see if it is a delimiter or not. If the character is not a 
-		delimiter, the function calls ft_word_splitter on the current substring 
-		(starting at the current index "i"), adds the resulting substring to the 
-		words array at the current index "j", and increments "j". If the character 
-		is a delimiter, the function simply increments the index "i" and continues 
-		to the next character. Once all the substrings have been processed, the 
-		function adds a null pointer to the end of the words array to indicate 
-		the end of the array, and returns the array.
-
-		This function splits the string s into an array of substrings based 
-		on the delimiter character c. It initializes variables i, j, and words. 
-		The variable words is a pointer to a pointer (char**) that will store 
-		the array of split words. It allocates memory for the words 
-		array using malloc, 
-		with the size calculated as the number of words in s (determined by 
-		ft_count_words(s, c)) plus one (to accommodate the null terminator). 
-		If the memory allocation fails or if s is null, it returns NULL.
-		The function then enters a loop that continues until the end of the 
-		string ('\0') is reached. Inside the loop, if the current character 
-		s[i] is not equal to the delimiter c, it calls ft_word_splitter 
-		with the address of s[i] to obtain the split word. It stores the 
-		returned word in the words array at index j and increments j to 
-		move to the next index. It then advances i until either the end 
-		of the string or the delimiter is encountered. If the current 
-		character is the delimiter, it simply increments i.
-		Finally, the last element of the words array is set to NULL to mark 
-		the end of the array, and the words array is returned.
-
 		The function ft_split takes a string s and a character c as input 
 		and splits the string into an array of words, where words are 
-		delimited by the character c. Here's a breakdown of how the 
-		function works:
+		delimited by the character c.
 
     	1 - Declare integer variables i and j and initialize them to 0. 
 		These variables will be used to keep track of the current 
@@ -116,28 +78,9 @@
 		of strings.
 
 	ft_count_words:
-		Takes a string "s" and a character "c" as input, and returns the 
-		number of words (i.e., substrings) in "s" that are delimited by the 
-		character "c". The function works by iterating through the string "s" 
-		and counting the number of times it encounters a non-delimiter character 
-		"c" followed by a delimiter character "c". This is done using a while 
-		loop that checks whether the current character is a delimiter or not, 
-		and increments a counter variable words accordingly. If the current 
-		character is not a delimiter, the function advances the index "i" 
-		until it reaches the next delimiter character or the end of the string.
-		
-		This function counts the number of words in a string 
-		s using a delimiter character c. It initializes variables i and words 
-		to 0. Then, it enters a loop that continues until the end of the string 
-		('\0') is reached. Inside the loop, if the current character s[i] is not 
-		equal to the delimiter c, it increments the words counter and advances i 
-		until either the end of the string or the delimiter is encountered. 
-		If the current character is the delimiter, it simply increments i. Finally, 
-		the function returns the total number of words counted.
-
 		The function ft_count_words takes a string s and a character c as input 
 		and counts the number of words in the string, where words are delimited by 
-		the character c. Here's a breakdown of how the function works:
+		the character c.
 
     	1 - Initialize two variables, i and words, to 0. These variables 
 		will be used to keep track of the current position in the string 
@@ -176,32 +119,9 @@
 		the characters of each word by using nested loops.
 
 	ft_word_splitter:
-		Takes a string "s" and a character "c" as input, and returns a 
-		substring of "s" that starts at the current index "i" and ends at 
-		the next delimiter character "c" or the end of the string. The function 
-		works by first calculating the length of the substring, and then 
-		allocating memory for it using malloc. This is done using a while loop 
-		that increments the index "i" until it reaches the next delimiter 
-		character or the end of the string, and counting the number of 
-		characters along the way. Once the length is known, the function 
-		allocates memory for the substring using malloc, copies the 
-		characters from the input string "s" to the substring using a 
-		for loop, and adds a null terminator at the end.
-
-		This function splits a word from a string s based on the delimiter 
-		character c. It initializes variables word and i to store the split 
-		word and the current index, respectively. It then enters a loop that 
-		continues until the end of the string or the delimiter character 
-		is encountered. Inside the loop, it checks if the current character 
-		is not equal to the delimiter. If true, it copies the character to 
-		the word array and increments i to move to the next character. 
-		Once the loop ends, it adds the null terminator to word and 
-		returns the split word.
-
 		The function ft_word_splitter takes a string s and a character c as 
 		input and returns a dynamically allocated string containing the 
 		first word from the input string, delimited by the character c. 
-		Here's a breakdown of how the function works:
 
     	1 - Declare a character pointer word to store the dynamically 
 		allocated string.

@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 19:00:09 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 19:00:12 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:49:55 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 
 	The  bzero()  function  erases  the  data  in the n bytes of the memory
-  starting at the location pointed to by s, by writing zeros (bytes
+  	starting at the location pointed to by s, by writing zeros (bytes
 	containing '\0') to that area.
 
 	The function sets the first n bytes of the memory block pointed to 
@@ -35,12 +35,12 @@
 	the memory block and a size_t n indicating the number of 
 	bytes to set to zero.
 
-  2 - It calls the ft_memset function, passing s as the 
+  	2 - It calls the ft_memset function, passing s as the 
 	pointer to the memory block, '\0' as the value to set 
 	(which represents zero in ASCII), and n as the size 
 	indicating the number of bytes to set.
 
-  3 - The ft_memset function then sets n bytes starting 
+  	3 - The ft_memset function then sets n bytes starting 
 	from the address pointed to by s to the value '\0', 
 	effectively setting the memory block to zero.
 

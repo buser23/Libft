@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 16:24:55 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/17 13:09:19 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:34:44 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,6 @@
 
 	The function ft_strrchr is similar to ft_strchr, but it searches 
 	for the last occurrence of the character c in the null-terminated string s. 
-	It takes two arguments:
-
-    	s: A pointer to the string in which to search for the character.
-    	c: An integer that represents the character to search for.
-
-	The function returns a pointer to the last occurrence of the 
-	character c in the string s, or NULL if the character is not found.
 
 	1 - The function ft_strrchr takes two arguments: a pointer s to the input 
 	string and an integer c representing the character to search for.

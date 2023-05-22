@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 15:38:59 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/17 18:42:02 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:33:00 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,38 +17,6 @@
 	The ft_strlcat() function is used to concatenate a null-terminated 
 	string from a source string to a destination string, while ensuring 
 	that the destination string does not overflow.
-
-	The function takes three arguments:
-
-    - dest: a pointer to the destination string where the 
-		  concatenated string will be stored.
-    - src: a const pointer to the source string to be concatenated.
-    - size: a size_t value representing the maximum number of 
-	    bytes that can be stored in the destination string, 
-		  including the null terminator.
-
-	The function returns a size_t value representing the total 
-	length of the concatenated string, i.e., the sum of the length 
-	of the source string and the original length of the destination string.
-
-
-	The function returns the total length of the string that would have 
-	been created if there were no size restrictions.
-
-	The implementation first calculates the lengths of the src 
-	and dest strings using the ft_strlen function. It then checks 
-	if size is greater than the length of the dest string. If it is, 
-	the function calculates the sum of the lengths of src and dest and 
-	continues appending src to dest until it reaches the end of src 
-	or the buffer size is reached.
-
-	If size is less than or equal to the length of dest, the function 
-	returns the sum of the length of src and size as there is not 
-	enough space to append the entire src string.
-
-	Finally, the function adds a null terminating character to the end 
-	of the resulting string and returns the total length of the string 
-	that would have been created without the size restrictions.
 
 	1 - The function header defines the function, which takes in 
 	three arguments: a pointer to the destination string, a 

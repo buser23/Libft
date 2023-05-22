@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 18:58:45 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 18:59:24 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:28:24 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 /*
 
-  1 - The function ft_isdigit takes an integer c as an argument, 
+  	1 - The function ft_isdigit takes an integer c as an argument, 
 	representing the character to be checked.
 
-  2 - It checks if the value of c falls within the ASCII range of decimal 
+  	2 - It checks if the value of c falls within the ASCII range of decimal 
 	digits ('0' to '9').
 
-  3 - If c is a decimal digit, the code returns 1, indicating that 
+  	3 - If c is a decimal digit, the code returns 1, indicating that 
 	the character is a digit.
 
-  4 - If c is not a decimal digit, the code returns 0, indicating that 
+  	4 - If c is not a decimal digit, the code returns 0, indicating that 
 	the character is not a digit.
 
 	5 - This implementation of isdigit checks if a character is a decimal 

@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 18:59:53 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/20 18:59:55 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:28:06 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@
 	1 - The function ft_isalpha takes an integer c as an argument, 
 	representing the character to be checked.
 
-  2 - It checks if the value of c falls within the ASCII range of lowercase 
+  	2 - It checks if the value of c falls within the ASCII range of lowercase 
 	letters ('a' to 'z') or the ASCII range of uppercase letters ('A' to 'Z').
 
-  3 - If c is an alphabetic character, the code returns 1, indicating 
+  	3 - If c is an alphabetic character, the code returns 1, indicating 
 	that the character is an alphabet.
 
-  4 - If c is not an alphabetic character, the code returns 0, indicating 
+  	4 - If c is not an alphabetic character, the code returns 0, indicating 
 	that the character is not an alphabet.
 
 	5 - This implementation of isalpha checks if a character is an alphabetic 

@@ -6,7 +6,7 @@
 /*   By: bsalgado <bsalgado@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 14:19:17 by bsalgado          #+#    #+#             */
-/*   Updated: 2023/05/17 18:19:32 by bsalgado         ###   ########.fr       */
+/*   Updated: 2023/05/22 14:51:13 by bsalgado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,53 +18,27 @@
 	pointer to a string representation of that integer. The string is dynamically 
 	allocated and must be freed by the caller.
 
-	This implementation uses a helper function ft_intlen to calculate the 
-	length of the integer, and handles negative integers differently.
-
-    	- ft_intlen is a helper function that takes an integer n and returns 
-		the number of digits in n. It works by initializing len to 1 if n is 0, 
-		and then repeatedly dividing n by 10 and incrementing len until n is 0.
-    	- ft_itoa takes an integer n as input and returns a pointer to a string 
-		representation of n. It first checks if n is negative and sets a sign variable 
-		accordingly. It then calculates the length of the string by calling ft_intlen 
-		and adding 1 if n is negative. It allocates memory for the string using 
-		malloc and checks if the allocation was successful. If not, it returns NULL.
-    	- If n is negative, it sets the first character of the string to '-' 
-		and sets the last character of the string to the ones digit of n (which is 
-		negative because n is negative), and updates n to be the remaining digits of 
-		the number. This is done because -(n % 10) gives the ones digit of n 
-		as a positive number.
-    	- Finally, it fills in the rest of the string by starting at the 
-		second-last character (if n is negative) or the last character 
-		(if n is positive) and repeatedly setting it to the last digit of 
-		n plus '0' (to convert it to a character digit), and then dividing 
-		n by 10 to move to the next digit.
-
-	The function then returns the pointer to the string. Note that the 
-	string is dynamically allocated and must be freed by the caller.
-
-
 	The function ft_intlen takes an integer n as input and returns the 
 	number of digits in that integer. Here's a breakdown of how the 
 	function works:
 
-    	1 - Declare an integer variable len and initialize it to 0.
+    1 - Declare an integer variable len and initialize it to 0.
 
-    	2 - Use a ternary operator !n to check if n is zero. If it 
-		is, assign len the value of 1. Otherwise, assign it the 
-		value of 0.
+    2 - Use a ternary operator !n to check if n is zero. If it 
+	is, assign len the value of 1. Otherwise, assign it the 
+	value of 0.
 
-    	3 - Start a loop that continues while n is not zero.
+    3 - Start a loop that continues while n is not zero.
 
-    	4 - Inside the loop, divide n by 10 to remove the 
-		rightmost digit.
+    4 - Inside the loop, divide n by 10 to remove the 
+	rightmost digit.
 
-    	5 - Increment len by 1 to count the digit that 
-		was just removed.
+    5 - Increment len by 1 to count the digit that 
+	was just removed.
 
-    	6 - Repeat steps 3-5 until n becomes zero.
+    6 - Repeat steps 3-5 until n becomes zero.
 
-    	7 - Return the value of len.
+    7 - Return the value of len.
 
 	In summary, the function ft_intlen calculates the number of digits 
 	in an integer by iteratively dividing the integer by 10 and 
@@ -74,51 +48,51 @@
 	into a string representation. Here's a breakdown 
 	of how the function works:
 
-    	1 - Declare a character pointer c to store the 
-		dynamically allocated string.
+    1 - Declare a character pointer c to store the 
+	dynamically allocated string.
 
-    	2 - Declare a boolean variable sign to store 
-		whether n is negative.
+    2 - Declare a boolean variable sign to store 
+	whether n is negative.
 
-    	3 - Calculate the length of the resulting string by 
-		calling the ft_intlen function and adding 1 to 
-		account for the sign if n is negative.
+    3 - Calculate the length of the resulting string by 
+	calling the ft_intlen function and adding 1 to 
+	account for the sign if n is negative.
 
-    	4 - Allocate memory for the string c using malloc. 
-		The size of the allocated memory is calculated as 
-		(len + 1) to accommodate the characters of the 
-		string plus the null character '\0' at the end.
+    4 - Allocate memory for the string c using malloc. 
+	The size of the allocated memory is calculated as 
+	(len + 1) to accommodate the characters of the 
+	string plus the null character '\0' at the end.
 
-    	5 - Check if the memory allocation was successful. 
-		If not, return NULL to indicate an error.
+    5 - Check if the memory allocation was successful. 
+	If not, return NULL to indicate an error.
 
-    	6 - Assign the null character '\0' to the last 
-		position in the string c to initialize it.
+    6 - Assign the null character '\0' to the last 
+	position in the string c to initialize it.
 
-    	7 - Check if n is negative using the sign variable. 
-		If it is, set the first character of c as '-' 
-		to indicate the negative sign.
+    7 - Check if n is negative using the sign variable. 
+	If it is, set the first character of c as '-' 
+	to indicate the negative sign.
 
-    	8 - Assign the last non-null character in the string 
-		c as -(n % 10) + '0' to convert the rightmost digit of 
-		n to a character. Then, update n to -(n / 10) to 
-		remove the rightmost digit.
+    8 - Assign the last non-null character in the string 
+	c as -(n % 10) + '0' to convert the rightmost digit of 
+	n to a character. Then, update n to -(n / 10) to 
+	remove the rightmost digit.
 
-    	9 - Start a loop that continues until the desired 
-		length of the string is reached.
+    9 - Start a loop that continues until the desired 
+	length of the string is reached.
 
-    	10 - Inside the loop, assign the current non-null 
-		character in the string c as n % 10 + '0' to convert 
-		the rightmost digit of n to a character. Then, 
-		update n to n / 10 to remove the rightmost digit.
+    10 - Inside the loop, assign the current non-null 
+	character in the string c as n % 10 + '0' to convert 
+	the rightmost digit of n to a character. Then, 
+	update n to n / 10 to remove the rightmost digit.
 
-    	11 - Decrement the position len to move to the 
-		next character in c.
+    11 - Decrement the position len to move to the 
+	next character in c.
 
-    	12 -Repeat steps 9-11 until the desired length 
-		of the string is reached.
+    12 -Repeat steps 9-11 until the desired length 
+	of the string is reached.
 
-    	13 - Return the dynamically allocated string c.
+    13 - Return the dynamically allocated string c.
 
 	In summary, the function ft_itoa converts an integer into a 
 	string representation by iteratively dividing the integer 
